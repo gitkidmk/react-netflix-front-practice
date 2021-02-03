@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import netflixLogo from "./netflix.png";
+import "./App.css";
+import MainHeader from "./Components/MainHeader";
+import LocoRow from "./Components/LocoRow";
 
-function App() {
+function NetFlix() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <img src={netflixLogo} alt="logo" id="netflixLogo" />
+      <MainHeader />
+      <LocoRow id="userWatching" />
+      <LocoRow id="mostWatched" />
+    </>
   );
 }
 
-export default App;
+export default NetFlix;
